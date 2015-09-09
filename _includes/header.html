@@ -1,0 +1,18 @@
+<header>
+  <div class="site-name">
+      <a href="#" class="action-img"><img class="logo" src="{{ site.baseurl }}/images/avatar.png"></a>
+    <a class="site-title action-img" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <p>{{ site.author }}</p>
+  </div>
+  <div class="site-nav">
+    <p>{{ site.description }}</p>
+    <p class="nav">
+      <a href="{{ site.baseurl }}/" class="action-img" id="home-page-link">home</a>
+      {% for page in site.pages %}
+        {% if page.title %}
+          / <a href="{{ page.url | prepend: site.baseurl }}" class="action-img" id="{{ page.link-id }}">{{ page.title }}</a>
+        {% endif %}
+      {% endfor %}
+    </p>
+  </div>
+</header>

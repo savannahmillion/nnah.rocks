@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+// Base variables
+$base-font-family: Menlo, Courier, mono;
+$base-font-size:   0.875rem;
+$small-font-size:  $base-font-size * 0.875;
+$large-font-size: $base-font-size * 1.2857;
+$base-line-height: 1.5;
+$base-border-radius: 4px;
+
+$base-spacing: 1em;
+$small-spacing: $base-spacing/2;
+$large-spacing: $base-spacing*2;
+
+$base-dark: #646E8C;
+$base-light: #B0B6C5;
+$base-purple: #9195DC;
+$base-blue: #81A5D4;
+
+$text-color: shade($base-dark, 40);
+$background-color: tint($base-light, 80);
+$brand-color: $base-purple;
+
+
+
+// Media Queries
+$small-screen: new-breakpoint(max-width 780px 4);
+
+
+
+/**
+ * Basic styling
+ */
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: 300;
+    color: $text-color;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+
+/**
+ * Typography
+ */
+ h1 {
+  font-size: $large-font-size;
+ }
+
+ h2 {
+  font-size: $base-font-size*1.14285;
+ }
+
+
+
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+
+/**
+ * Figures
+ */
+figure > img {
+    display: block;
+}
+
+figcaption {
+    font-size: $small-font-size;
+}
+
+
+
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: $base-spacing;
+}
+
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Links
+ */
+a {
+    color: $base-blue;
+    text-decoration: none;
+    border-bottom: 1px solid $base-blue;
+    @include transition( all 0.8s );
+
+    &:visited {
+        color: shade($base-blue, 20);
+    }
+
+    &:hover {
+        color: shade($base-blue, 20);
+        border-bottom-color: shade($base-blue, 20);
+    }
+}
+
+a.action-img {
+  border-bottom: 0px;
+}
+
+
+
+/**
+ * Blockquotes
+ */
+blockquote {
+    color: $base-light;
+    border-left: 4px solid tint($base-light, 40);
+    padding-left: $small-spacing;
+    font-size: $large-font-size;
+    font-style: italic;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+    font-size: $base-font-size;
+    border: 1px solid tint($base-light, 40);
+    border-radius: 3px;
+    background-color: #eef;
+}
+
+code {
+    padding: 1px 5px;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: scroll;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+
+
+/**
+ * Clearfix
+ */
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+
+/**
+ * Icons
+ */
+.icon {
+
+    > svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+
+        path {
+            fill: $base-dark;
+        }
+    }
+}
