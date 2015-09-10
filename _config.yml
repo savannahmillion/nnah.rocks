@@ -5,7 +5,7 @@ author: savannah million
 description: > # this means to ignore newlines until "baseurl:"
   Product designer. Windy city, sunny disposition.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "nnah.rocks" # the base hostname & protocol for your site
+url: "sava.nnah.rocks" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
