@@ -11,4 +11,4 @@ Hello! My name is Savannah Million and this is my website! I'm a product designe
 
 I live in Chicago with my cat Pye and I ride a shiny bike with a shiny helmet.<br/><br/>
 
-You can get in touch with me through email, [sav@nnah.rocks](mailto:'sav@nnah.rocks') or through twitter, [@savannahmillion](https://twitter.com/savannahmillion).
+You can get in touch with me through email, [savannahmillion@gmail.com](mailto:'savannahmillion@gmail.com') or through twitter, [@savannahmillion](https://twitter.com/savannahmillion).
